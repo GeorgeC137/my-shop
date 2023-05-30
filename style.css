@@ -42,6 +42,7 @@ nav ul li{
 a{
     text-decoration: none;
     color: red;
+    font-weight: 600;
 }
 p{
     color: black;
@@ -155,23 +156,23 @@ small{
     font-size: 1rem;
 }
 
-/* Testimonial Section */
-.testimonial{
+/* Reviews Section */
+.review{
     padding-top: 100px;
 }
-.testimonial .col-3{
+.review .col-3{
     text-align: center;
     padding: 40px 20px;
     cursor: pointer;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     transition: transform 0.5s;
 }
-.testimonial .col-3 img{
+.review .col-3 img{
     width: 50px;
     border-radius: 50%;
     margin-top: 20px;
 }
-.testimonial .col-3:hover{
+.review .col-3:hover{
     transform: translateY(-10px);
 }
 .fa-solid.fa-quote-left{
@@ -183,7 +184,7 @@ small{
     margin: 12px 0;
     color: maroon;
 }
-.testimonial .col-3 h3{
+.review .col-3 h3{
     font-weight: 600;
     font-size: 1.5rem;
     color: black;
@@ -241,6 +242,9 @@ small{
 ul{
     list-style-type: none;
 }
+ul li{
+    cursor: pointer;
+}
 .app-logo{
     margin-top: 20px;
 }
@@ -258,4 +262,49 @@ ul{
 }
 .footer .copyright{
     color: greenyellow;
+}
+
+/* Menu icon */
+.menu-icon{
+    width: 28px;
+    margin-left: 25px;
+    display: none;
+}
+
+
+/* Media Query for Menu */
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: yellow;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+        font-weight: 600;
+    }
+    .menu-icon{
+        cursor: pointer;
+        display: block;
+    }
+}
+
+/* Media Query for screen size < 600   */
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4, .col-5{
+        flex-basis: 100%;
+    }
 }

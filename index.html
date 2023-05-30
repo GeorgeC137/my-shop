@@ -19,7 +19,7 @@
                     <img src="images/logo.png" width="125">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">About</a></li>
@@ -28,6 +28,7 @@
                     </ul>
                 </nav>
                 <i class="fa-solid fa-cart-shopping"></i>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -230,8 +231,8 @@
         </div>
     </div>
 
-    <!-- Testimonial Section -->
-    <div class="testimonial">
+    <!-- Reviews Section -->
+    <div class="review">
         <div class="small-container">
             <div class="row">
                 <div class="col-3">
@@ -336,9 +337,25 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2023 - George Omollo</p>
+            <p class="copyright">Copyright @ 2023 By George Omollo</p>
         </div>
     </div>
+
+    <!-- JavaScript for toggle Menu  -->
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
     
 </body>
 </html>
