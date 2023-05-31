@@ -323,6 +323,53 @@ select:focus{
 /* Page-btn End  */
 
 
+/* Single Product Detail Start  */
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 1.5rem;
+}
+.single-product h3{
+    margin: 1.2rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.single-product select{
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+}
+.single-product input{
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border: 1px solid goldenrod;
+    margin-right: 1.2rem;
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa-solid{
+    color: #ff523b;
+    margin-left: 10px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    margin-top: 5px;
+}
+/* Single Product Detail End  */
+
+
 /* Media Query for Menu Start */
 @media only screen and (max-width: 800px){
     nav ul{
@@ -363,6 +410,16 @@ select:focus{
     }
     .col-2, .col-3, .col-4, .col-5{
         flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 1.7rem;
+        line-height: 2rem;
     }
 }
 /* Media Query for screen size < 600 End  */
