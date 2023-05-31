@@ -9,7 +9,7 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* Header Section */
+/* Header Section Start */
 .header{
     background: radial-gradient(yellow, skyblue);
 }
@@ -78,8 +78,10 @@ p{
 .btn:hover{
     background: green;
 }
+/* Header Section End  */
 
-/* Categories Section */
+
+/* Categories Section Start */
 .categories{
     margin: 70px 0;
 }
@@ -97,8 +99,10 @@ p{
     margin: auto;
     max-width: 1080px;
 }
+/* Categories Section End  */
 
-/* Featured Products */
+
+/* Featured Products Start */
 .col-4{
     flex-basis: 25%;
     padding: 10px;
@@ -141,8 +145,10 @@ h4{
     transform: translateY(-15px);
     cursor: pointer;
 }
+/* Featured products End  */
 
-/* Offer Section */
+
+/* Offer Section Start */
 .offer{
     background: radial-gradient(yellow, skyblue);
     margin-top: 80px;
@@ -155,8 +161,10 @@ small{
     color: blue;
     font-size: 1rem;
 }
+/* Offer Section End  */
 
-/* Reviews Section */
+
+/* Reviews Section Start */
 .review{
     padding-top: 100px;
 }
@@ -189,8 +197,10 @@ small{
     font-size: 1.5rem;
     color: black;
 }
+/* Review Section End  */
 
-/* Brands Section */
+
+/* Brands Section Start */
 .brands{
     margin: 100px auto;
 }
@@ -205,8 +215,10 @@ small{
 .col-5 img:hover{
     filter: grayscale(0);
 }
+/* Brands Section End  */
 
-/* Footer Section */
+
+/* Footer Section Start */
 .footer{
     color: white;
     font-size: 1.1rem;
@@ -263,15 +275,19 @@ ul li{
 .footer .copyright{
     color: greenyellow;
 }
+/* Footer Section End  */
 
-/* Menu icon */
+
+/* Menu icon Start */
 .menu-icon{
     width: 28px;
     margin-left: 25px;
     display: none;
 }
+/* Menu icon End */
 
-/* All Products Section  */
+
+/* All Products Section Start */
 .row-2{
     justify-content: space-between;
     margin: 100px auto 75px;
@@ -283,9 +299,31 @@ select{
 select:focus{
     outline: none;
 }
+/* All products End  */
 
 
-/* Media Query for Menu */
+/* Page-btn Start  */
+.page-btn{
+    margin: 0 auto 3rem;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid goldenrod;
+    margin-left: .9rem;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: white;
+}
+/* Page-btn End  */
+
+
+/* Media Query for Menu Start */
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -310,7 +348,13 @@ select:focus{
         cursor: pointer;
         display: block;
     }
+    .page-btn{
+        text-align: center;
+        flex-basis: 100%;
+    }
 }
+/* Media Query for Menu End  */
+
 
 /* Media Query for screen size < 600   */
 @media only screen and (max-width: 600px){
@@ -321,3 +365,4 @@ select:focus{
         flex-basis: 100%;
     }
 }
+/* Media Query for screen size < 600 End  */
