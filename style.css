@@ -271,6 +271,19 @@ ul li{
     display: none;
 }
 
+/* All Products Section  */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 75px;
+}
+select{
+    border: 1px solid goldenrod;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
 
 /* Media Query for Menu */
 @media only screen and (max-width: 800px){
