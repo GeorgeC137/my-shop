@@ -44,6 +44,9 @@ a{
     color: red;
     font-weight: 600;
 }
+a:hover{
+    color: green;
+}
 p{
     color: black;
 }
