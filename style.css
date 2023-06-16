@@ -44,7 +44,7 @@ a{
     color: red;
     font-weight: 600;
 }
-a:hover{
+nav ul li a:hover{
     color: green;
 }
 p{
